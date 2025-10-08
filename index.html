@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სასტუმრო</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>სასტუმრო</h1>
+        <nav>
+            <a href="#">მთავარი</a>
+            <a href="#">ოთახები</a>
+            <a href="#">დაჯავშნა</a>
+            <a href="#">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <section class="rooms">
+        <h2>ოთახების კატალოგი</h2>
+        <div class="room-grid">
+            <div class="room">
+                <h3>მარტოხელა ოთახი</h3>
+                <p>ტიპი: Single</p>
+                <p>ღირებულება: 80₾ / ღამე</p>
+                <p class="free">თავისუფალია</p>
+                <button>დაჯავშნა</button>
+            </div>
+
+            <div class="room">
+                <h3>ორადგილიანი ოთახი</h3>
+                <p>ტიპი: Double</p>
+                <p>ღირებულება: 130₾ / ღამე</p>
+                <p class="busy">დაკავებულია</p>
+                <button disabled>დაკავებულია</button>
+            </div>
+
+            <div class="room">
+                <h3>ოჯახური ოთახი</h3>
+                <p>ტიპი: Family</p>
+                <p>ღირებულება: 200₾ / ღამე</p>
+                <p class="free">თავისუფალია</p>
+                <button>დაჯავშნა</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>დაჯავშნის ფორმა</h2>
+        <form>
+            <label>სახელი:</label>
+            <input type="text" required>
+
+            <label>დღეების რაოდენობა:</label>
+            <input type="number" min="1" required>
+
+            <button type="submit">დადასტურება</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 სასტუმრო ###| ყველა უფლება დაცულია</p>
+    </footer>
+</body>
+</html>
