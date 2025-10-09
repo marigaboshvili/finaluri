@@ -31,7 +31,7 @@ class Room:
     def calculate_price(self, nights):
         return round(self.price_per_night * nights, 2)
 
-    # სტრინგის გამოსახვა განვითარების დროს
+    # ტექსტური შეტყობინება/ინფორმაცია ოთახების
     def __str__(self):
         status = "თავისუფალია" if self.is_available else "დაკავებულია"
         return f"#{self.room_number} | ტიპი: {self.room_type} | ღამე: {self.price_per_night}₾ | {status}"
@@ -44,7 +44,7 @@ class Customer:
         self.name = name
         # მომხმარებლის ბიუჯეტი
         self.budget = budget
-        # დაჯავშნილი ოთახების ლისტი
+        # დაჯავშნილი ოთახები 
         self.booked_rooms = {}
         # ქულების დაგროვების სისტემა
         self.points = 0  # თითოეულ დაჯავშნაზე შეიძლება დაემატოს ქულა
@@ -80,7 +80,7 @@ class Customer:
         text = f"\n{self.name}-ის აქტიური დაჯავშნები:\n"
         for data in self.booked_rooms.values():
             room = data["room"]
-            text += f" - #{room.room_number} ({room.room_type}) – {data['price']}₾\n"
+            text += f" - #{room.room_number} ({room.room_type}) {data['price']}₾\n"
         text += f"დარჩენილი ბიუჯეტი: {self.budget}₾\n"
         text += f"დაგროვილი ქულები: {self.points}\n"
         return text
