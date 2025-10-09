@@ -1,13 +1,15 @@
+/* ძირითადი სხეულის სტილი */
 body {
-    font-family: "BPG Glaho", sans-serif;
-    background-color: #f7f7f7;
+    font-family: "BPG Glaho", sans-serif; /* ფონტი */
+    background-color: #f7f7f7; /* ფონტის ფერი */
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333; /* ტექსტის ფერი */
 }
 
+/* header სექცია */
 header {
-    background-color: #174873;
+    background-color: #174873; /* header ფონი */
     color: white;
     padding: 20px 40px;
     display: flex;
@@ -15,6 +17,7 @@ header {
     align-items: center;
 }
 
+/* ნავიგაციის სტილი */
 nav a {
     color: white;
     text-decoration: none;
@@ -23,13 +26,15 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* hover ეფექტი */
 }
 
+/* ოთახების სექცია */
 .rooms {
     padding: 30px 60px;
 }
 
+/* ოთახების გრიდი */
 .room-grid {
     display: flex;
     gap: 25px;
@@ -37,6 +42,7 @@ nav a:hover {
     justify-content: center;
 }
 
+/* ინდივიდუალური ოთახის სტილი */
 .room {
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -48,19 +54,22 @@ nav a:hover {
 }
 
 .room h3 {
-    color: #174873;
+    color: #174873; /* სათაურის ფერი */
 }
 
+/* თავისუფალი ოთახის ტექსტი */
 .free {
     color: #2e7d32;
     font-weight: bold;
 }
 
+/* დაკავებული ოთახის ტექსტი */
 .busy {
     color: #c62828;
     font-weight: bold;
 }
 
+/* ღილაკების სტილი */
 button {
     background-color: #174873;
     color: white;
@@ -71,21 +80,25 @@ button {
     cursor: pointer;
 }
 
+/* დაუსაშვები ღილაკები */
 button:disabled {
     background-color: #999;
     cursor: not-allowed;
 }
 
+/* hover ეფექტი აქტიურ ღილაკებზე */
 button:hover:not(:disabled) {
     background-color: #2168a3;
 }
 
+/* დაჯავშნის ფორმის სექცია */
 .form-section {
     background-color: #eef4f8;
     padding: 40px 60px;
     text-align: center;
 }
 
+/* ფორმის სტილი */
 form {
     display: inline-flex;
     flex-direction: column;
@@ -94,12 +107,14 @@ form {
     text-align: left;
 }
 
+/* ტექსტის ველები */
 input {
     padding: 8px;
     border-radius: 6px;
     border: 1px solid #aaa;
 }
 
+/* ფუტერის სტილი */
 footer {
     text-align: center;
     background-color: #174873;
